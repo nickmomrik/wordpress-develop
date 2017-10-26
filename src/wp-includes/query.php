@@ -881,9 +881,8 @@ function wp_old_slug_redirect() {
 		 * @since
 		 *
 		 * @param string $id The redirect post ID.
-		 * @param string $post_type The current post type based on the query vars.
 		 */
-		$id = apply_filters( 'old_slug_redirect_post_id', $id, $post_type );
+		$id = apply_filters( 'old_slug_redirect_post_id', $id );
 
 		if ( ! $id ) {
 			return;
